@@ -17,7 +17,7 @@ class CustomerController(
     //verifica nome
     @GetMapping // retorna todos os elementos da lista
     fun getAll(@RequestParam name: String?): List<CustomerModel> {
-        return customerService.getAll(name).toList()
+        return customerService.getAll(name)
     }
 
 //    @PostMapping
